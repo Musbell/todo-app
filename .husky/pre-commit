@@ -2,6 +2,3 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint && git add -A .
-npm run test:cov
-npm run test:e2e
-npm run build
