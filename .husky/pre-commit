@@ -2,5 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 npm run lint && git add -A .
-npm run test
+npm run test:cov
 npm run build

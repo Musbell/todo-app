@@ -2,8 +2,8 @@ import { Resolver, Query, Mutation, Args } from '@nestjs/graphql';
 import { Todo as TodoModel } from '@prisma/client';
 import { TodosService } from './todos.service';
 import { OrderByParams } from '../graphql';
-import { TodoCreateInput } from '../@generated/prisma-nestjs-graphql/todo/todo-create.input';
-import { TodoUpdateInput } from '../@generated/prisma-nestjs-graphql/todo/todo-update.input';
+import { TodoCreateInput } from '../../prisma/@generated/prisma-nestjs-graphql/todo/todo-create.input';
+import { TodoUpdateInput } from '../../prisma/@generated/prisma-nestjs-graphql/todo/todo-update.input';
 
 @Resolver('Todo')
 export class TodosResolver {
