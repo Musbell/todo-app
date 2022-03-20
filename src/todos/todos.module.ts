@@ -4,6 +4,7 @@ import { TodosResolver } from './todos.resolver';
 import { PrismaService } from '../../prisma/prisma.service';
 
 @Module({
-  providers: [PrismaService, TodosResolver, TodosService],
+  providers: [TodosResolver, TodosService, PrismaService],
+  exports: [PrismaService],
 })
 export class TodosModule {}
